@@ -1,0 +1,293 @@
+@charset "utf-8";
+/**
+   * Description: CSS
+   * Version: 1.0.0
+   * Last update: 2017/08/20
+   * Author: Duc PM <minhducpham.it@gmail.com>
+   *
+   * Summary:
+   *
+   *  0. ELEMENT
+   *    - 0.1. TYPE ELEMENT
+   *    - 0.2. TYPE ELEMENT
+   *  1. ELEMENT
+   *    - 1.1. TYPE ELEMENT
+   *    - 1.2. TYPE ELEMENT
+   */
+
+/* Import Files
+  ========================================================================== */
+/*  Css */
+@import url(../lib/bootstrap/bootstrap.min.css);
+@import url(../lib/font-awesome/font-awesome.min.css);
+@import url(../lib/carousel/owl.carousel.min.css);
+
+/* Layout Style
+  ========================================================================== */
+body {
+  font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
+  font-size: 14px;
+  color: #8d8d8d;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+*:focus,
+a:focus {
+  outline: none;
+}
+
+iframe {
+  max-width: 100%;
+  display: block;
+}
+
+figure {
+  max-width: 100%;
+}
+
+.sh-noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+dd {
+  margin: 0 0 20px;
+}
+
+pre {
+  border: 0;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  min-height: 1px;
+  height: auto;
+}
+
+p {
+  line-height: 1.8;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+
+/**
+ * 2.0 - Typography
+ */
+
+a {
+  color: #47c9e5;
+  text-decoration: none;
+  word-wrap: break-word;
+}
+
+a:hover, a:focus {
+  color: #47c9e5;
+  text-decoration: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', serif;
+  color: #3f3f3f;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  padding: 0;
+  line-height: normal!important;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-weight: inherit;
+  line-height: normal!important;
+}
+
+h1 p,
+h2 p,
+h3 p,
+h4 p,
+h5 p,
+h6 p {
+  margin: 0;
+}
+
+h2 {
+  font-size: 20px;
+}
+.sh-team-role,
+.sh-iconbox-title,
+.sh-iconbox-content,
+.sh-text-with-frame * {
+  word-wrap: break-word;
+}
+
+/* Typography - Sizes */
+.size-xs{ font-size: 14px; }
+.size-s{ font-size: 16px; }
+.size-m{ font-size: 20px; }
+.size-l{ font-size: 30px; }
+.size-xl{ font-size: 36px; }
+.size-xxl{ font-size: 48px; }
+.size-xxxl{ font-size: 60px; }
+.size-xxxxl{ font-size: 72px; }
+
+@media (max-width: 1024px) {
+  .size-l{ font-size: 20px; }
+  .size-xl{ font-size: 26px; }
+  .size-xxl{ font-size: 30px; }
+  .size-xxxl{ font-size: 36px; }
+  .size-xxxxl{ font-size: 40px; }
+}
+
+.sh-text-background {
+  background-color: #47c9e5;
+  color: #fff;
+  display: inline-block!important;
+  padding: 0 11px;
+  border-radius: 8px;
+}
+
+.sh-text-background-white {
+  background-color: #fff;
+  color: #505050;
+  display: inline-block!important;
+  padding: 0 11px;
+  border-radius: 8px;
+}
+
+/**
+ * 3.0 Input
+ */
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  border: 1px solid #e3e3e3;
+  color: #8d8d8d;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+  padding: 0px 20px;
+  line-height: 48px!important;
+}
+
+textarea {
+  height: 120px;
+  padding: 18px 24px;
+}
+
+select::-webkit-input-placeholder,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  height: inherit!important;
+  line-height: inherit!important;
+  font-style: italic;
+  color: inherit;
+}
+
+select:-moz-placeholder,
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  height: inherit!important;
+  line-height: inherit!important;
+  font-style: italic;
+  color: inherit;
+}
+
+select::-moz-placeholder,
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  height: inherit!important;
+  line-height: inherit!important;
+  font-style: italic;
+  color: inherit;
+}
+
+select:-ms-input-placeholder,
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  height: inherit!important;
+  line-height: inherit!important;
+  font-style: italic;
+  color: inherit;
+}
+
+/**
+ * 6.0 Tables
+*/
+table {
+  border: 2px solid #e5e5e5!important;
+  border-radius: 0!important;
+  border-collapse: collapse!important;;
+}
+
+table td,
+table th {
+  border: 1px solid #e5e5e5!important;
+}
+
+table td {
+  padding: 15px 20px!important;
+}
+
+table th {
+  padding: 15px 20px!important;
+  font-size: 16px;
+  color: #505050;
+}
+
+.sh-table-element-style2 .default-row:nth-child(odd) {
+  background: #fafafa;
+}
+
+.sh-table-element-style3 table td,
+.sh-table-element-style3 table th {
+  border-width: 0px!important;
+}
+
+#page-container {
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  width: 100%;
+}
+.sh-animation-left, #page-container {
+  transition: left 0.3s ease-in-out!important;
+}
+#page-container {
+  position: relative;
+  left: 0;
+}
