@@ -24,6 +24,10 @@
 
 /* Layout Style
   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: 'Raleway', 'Helvetica', 'Arial', sans-serif;
   font-size: 14px;
@@ -437,6 +441,7 @@ table th {
   float: left;
   padding: 0 15px;
   border-bottom: 0px solid transparent;
+  position: relative;
 }
 .sh-nav > li.menu-item > a {
   line-height: 40px;
@@ -473,15 +478,34 @@ table th {
   position: relative;
 }
 .sh-nav ul.sub-menu {
-  display: none;
   position: absolute;
   background: #232323;
   top: 100%;
-  padding: 16px 0;
-  width: 220px;
+  right: 0;
+  padding: 15px;
   z-index: 1000;
-  margin-left: -26px;
+  width: 220px;
   background-color: #232323;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translate(0, 10px);
+  -ms-transform: translate(0, 10px);
+  -o-transform: translate(0, 10px);
+  transform: translate(0, 10px);
+}
+.sh-nav > li.menu-item:hover ul.sub-menu {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate(0, 0px);
+  -ms-transform: translate(0, 0px);
+  -o-transform: translate(0, 0px);
+  transform: translate(0, 0px);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 .sh-nav ul.sub-menu li {
   width: 100%;
@@ -500,6 +524,11 @@ table th {
 }
 .header-mobile-social-media a i, .sh-nav-mobile li a, .sh-header .sh-nav > li.menu-item ul a, .sh-header-left-side .sh-nav > li.menu-item ul a {
   color: #aaaaaa!important;
+  transition: 0.3s padding ease-in-out;
+}
+.sh-nav-mobile .current_page_item > a, .sh-nav-mobile > li a:hover, .sh-header .sh-nav ul, .sh-header .sh-nav > li.menu-item:not(.menu-item-cart) ul a:hover, .sh-header .sh-nav ul.mega-menu-row li.mega-menu-col > a, .sh-header-left-side .sh-nav ul, .sh-header-left-side .sh-nav > li.menu-item:not(.menu-item-cart) ul a:hover, .sh-header-left-side .sh-nav ul.mega-menu-row li.mega-menu-col > a, .sh-header .woocommerce a.remove:hover:before, .sh-header-left-side .woocommerce a.remove:hover:before {
+  color: #ffffff!important;
+  transition: 0.3s padding ease-in-out;
 }
 
 .sh-nav-cart i,
@@ -542,6 +571,12 @@ table th {
 .sh-nav > li.menu-item:last-child {
   padding-right: 0;
 }
+.sh-sticky-header-active .sh-nav ul.sub-menu {
+  top: 101%;
+}
+.sh-nav .sh-nav-cart > ul.sub-menu {
+  width: 350px;
+}
 
 .sh-header-search {
   display: none;
@@ -572,7 +607,7 @@ table th {
   background-color: transparent;
   padding: 0;
   color: #505050;
-  line-height: 48px!important;
+  line-height: 48px;
   padding-right: 75px;
   width: 100%;
 }
@@ -599,4 +634,131 @@ table th {
   font-size: 24px;
   cursor: pointer;
   line-height: 1;
+}
+
+
+.sh-titlebar {
+  position: relative;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: cover;
+  background-color: #fafafa;
+  z-index: 100;
+}
+.sh-titlebar .container {
+  padding: 0px 15px;
+}
+.sh-titlebar-height-medium {
+  padding: 50px 0;
+}
+.sh-titlebar .sh-table {
+  min-height: 60px;
+  z-index: 100;
+  position: relative;
+}
+.sh-titlebar .title-level {
+  text-align: right;
+}
+.sh-titlebar .titlebar-title h1, .sh-titlebar .titlebar-title h2 {
+  font-size: 24px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.sh-titlebar .title-level .breadcrumbs {
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: -4px;
+  position: relative;
+}
+.sh-titlebar a {
+  color: #8d8d8d;
+}
+
+.products .list-products {
+  margin: 0 0 1em;
+  padding: 0;
+  list-style: none outside;
+}
+.products .list-products .item {
+  position: relative;
+}
+.products .list-products .item .products-content {
+  background-color: #fff;
+  box-shadow: 0px 3px 13px 1px rgba(0,0,0,0.12);
+  padding-top: 30px;
+}
+.products .list-products .item .products-content a:first-child {
+  padding: 0 30px 5px 30px;
+  display: block;
+  border-bottom: 1px solid #e9e9e9;
+}
+.products .list-products .item .products-content .product-title {
+  padding: 0 0 .5em;
+  margin: 0;
+  font-size: 1em;
+}
+.products .list-products .item .products-content .product-additional-information {
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #8d8d8d;
+}
+.products .list-products .item .products-content .product-price {
+  width: 100%;
+  margin-bottom: 15px;
+  line-height: 1;
+  font-size: 24px;
+}
+.products .list-products .item .products-content .product-price span {
+  text-decoration: none;
+  color: #3f3f3f;
+  font-weight: bold;
+}
+.products .list-products .item .products-content .product-add-to-cart {
+  background-color: transparent;
+  padding: 0;
+  color: #8d8d8d;
+  position: relative;
+  display: block;
+  padding: 20px 30px!important;
+  line-height: 1!important;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none;
+  text-align: left;
+  margin: 0;
+}
+.products .list-products .item .products-content .product-add-to-cart:after {
+  font-family: 'simple-line-icons';
+  content: "\e04e";
+  font-size: 16px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: 0;
+  margin-left: 0;
+  vertical-align: middle;
+  position: relative!important;
+  top: -2px;
+  right: 0;
+}
+
+.block-custom-heading {
+  font-family: "Raleway";
+  color: #3f3f3f;
+  font-weight: 700;
+  margin: 30px 0;
+  display: block;
+  text-align: center;
+}
+.block-custom-heading a {
+  transition: all .2s ease-in-out;
+  opacity: 1;
+  border: none;
+  text-decoration: inherit;
+  color: inherit;
 }
