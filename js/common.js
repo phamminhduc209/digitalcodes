@@ -73,5 +73,38 @@
     });
   });
 
+  /* Footer Parallax */
+  function jevelin_footer_parallax() {
+    if ($(document).width() > 850) {
+      $("#wrapper > .content-container").css( 'margin-bottom', $('.sh-footer').height() );
+    } else {
+      $("#wrapper > .content-container").css( 'margin-bottom', '' );
+    }
+  }
+
+  function jevelin_footer_parallax_visible() {
+    if ($(document).width() > 850) {
+      if( ( $(document).height() - ($(window).scrollTop() + $(window).height()) ) < $('.sh-footer').height() ) {
+        $('.sh-footer').css( 'opacity', '1');
+      } else {
+        $('.sh-footer').css( 'opacity', '0');
+      }
+    }
+  }
+
+  if( jevelin_footer_parallax == 1 ) {
+    $("body").addClass( 'sh-footer-paralalx-init' );
+    $(window).load(function (){
+      jevelin_footer_parallax();
+      jevelin_footer_parallax_visible();
+    });
+    $(window).resize(function() {
+        clearTimeout(window.resizedFinishedFooter);
+        window.resizedFinishedFooter = setTimeout(function(){
+          jevelin_footer_parallax();
+        }, 500);
+    });
+    $(window).scroll(jevelin_footer_parallax_visible);
+  }
 
 })(jQuery); // End of use strict

@@ -762,3 +762,20 @@ table th {
   text-decoration: inherit;
   color: inherit;
 }
+
+.sh-footer {
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.sh-footer {
+  transition: 0.3s left ease-in-out;
+}
+.sh-footer-widgets {
+  padding: 100px 0 100px 0;
+  color: #e3e3e3;
+  background-color: #262626;
+}
+.sh-footer .sh-footer-widgets {
+  background-color: #262626;
+  color: #e3e3e3;
+}
