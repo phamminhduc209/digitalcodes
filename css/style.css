@@ -779,3 +779,47 @@ table th {
   background-color: #262626;
   color: #e3e3e3;
 }
+.sh-footer-widgets .container {
+  margin-bottom: -35px;
+}
+.sh-footer-columns {
+  position: relative;
+  margin: 0 -15px;
+}
+.sh-footer-columns > .widget-item {
+  display: inline-block;
+  width: 33.3%;
+  vertical-align: top;
+  padding: 0 15px;
+  margin-bottom: 25px;
+  margin-right: -4px;
+}
+.sh-footer .sh-footer-widgets .widget-title {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.widget-item ul {
+  list-style: none;
+  padding-left: 0;
+}
+.sh-footer-widgets ul li, .sh-footer-widgets ul li {
+  border-bottom: 1px solid rgba( 255,255,255,0.1 );
+  padding: 7.5px 0;
+}
+.sh-footer-widgets ul li:first-child {
+  padding-top: 0;
+}
+.sh-footer .sh-footer-widgets ul li,
+.sh-footer .sh-footer-widgets ul li,
+.sh-footer .sh-recent-posts-widgets .sh-recent-posts-widgets-item {
+  border-color: rgba(255,255,255,0.10);
+}
+.widget-item li > a {
+  display: block;
+  color: #ffffff;
+}
+.sh-footer-widgets ul li:last-child {
+    border-bottom: 0!important;
+    padding-bottom: 0!important;
+}
