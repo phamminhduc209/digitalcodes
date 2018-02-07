@@ -94,11 +94,13 @@ a {
   color: #47c9e5;
   text-decoration: none;
   word-wrap: break-word;
+  transition: all 0.3s ease-in-out;
 }
 
 a:hover, a:focus {
   color: #47c9e5;
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 
 
@@ -819,7 +821,49 @@ table th {
   display: block;
   color: #ffffff;
 }
+.sh-footer .sh-footer-widgets a:hover, .sh-footer .sh-footer-widgets li a:hover {
+  color: #47c9e5;
+}
 .sh-footer-widgets ul li:last-child {
-    border-bottom: 0!important;
-    padding-bottom: 0!important;
+  border-bottom: 0!important;
+  padding-bottom: 0!important;
+}
+.tnp-widget {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+.tnp-widget .tnp-field {
+    margin-bottom: 10px;
+    border: 0;
+    padding: 0;
+}
+.tnp-widget label {
+    display: block;
+    color: inherit;
+    font-size: 14px;
+}
+.tnp-widget input[type=text], .tnp-widget input[type=email], .tnp-widget input[type=submit], .tnp-widget select {
+    width: 100%;
+    padding: 10px;
+    display: block;
+    border: 1px solid #ddd;
+    border-color: #ddd;
+    background-color: #f4f4f4;
+    background-image: none;
+    text-shadow: none;
+    color: #444;
+    font-size: 14px;
+    line-height: normal;
+    box-sizing: border-box;
+    height: auto;
+}
+.tnp-widget input.tnp-submit {
+    background-color: #444;
+    background-image: none;
+    text-shadow: none;
+    color: #fff;
+}
+.tnp-field input[type="submit"] {
+    position: inherit;
 }
