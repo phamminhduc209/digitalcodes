@@ -867,3 +867,39 @@ table th {
 .tnp-field input[type="submit"] {
     position: inherit;
 }
+
+.sh-footer .sh-copyrights {
+  background-color: #222222;
+  color: #ffffff;
+  /*padding: 10px 0;*/
+}
+.container-padding {
+  padding: 0 15px!important;
+}
+.sh-copyrights-style1 {
+  float: left;
+  height: 70px;
+}
+.sh-copyrights-social {
+  font-size: 16px;
+  line-height: normal!important;
+  margin-right: 4px;
+}
+.sh-copyrights-social a {
+  display: inline-block;
+  border-left: 1px solid rgba( 255,255,255,0.1 );
+  height: 70px;
+  line-height: 70px;
+  width: 70px;
+  text-align: center;
+  margin-right: -4px;
+}
+.sh-footer .sh-copyrights a {
+  color: #ffffff;
+}
+.sh-footer .sh-copyrights-social a {
+  border-left: 1px solid rgba(255,255,255,0.15);
+}
+.sh-footer .sh-copyrights-social a:last-child {
+  border-right: 1px solid rgba(255,255,255,0.15);
+}
