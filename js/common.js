@@ -52,7 +52,7 @@
   /*
    * 3. Sticky Menu
   */
-  $('.fixed').sticky({ topSpacing: 0 });
+  // $('.sh-sticky-header').sticky({});
 
   /*
    * 7. Main Menu
@@ -92,19 +92,33 @@
     }
   }
 
-  if( jevelin_footer_parallax == 1 ) {
-    $("body").addClass( 'sh-footer-paralalx-init' );
-    $(window).load(function (){
-      jevelin_footer_parallax();
-      jevelin_footer_parallax_visible();
-    });
-    $(window).resize(function() {
-        clearTimeout(window.resizedFinishedFooter);
-        window.resizedFinishedFooter = setTimeout(function(){
-          jevelin_footer_parallax();
-        }, 500);
-    });
-    $(window).scroll(jevelin_footer_parallax_visible);
-  }
+  $("body").addClass( 'sh-footer-paralalx-init' );
+  $(window).load(function (){
+    jevelin_footer_parallax();
+    jevelin_footer_parallax_visible();
+  });
+  $(window).resize(function() {
+      clearTimeout(window.resizedFinishedFooter);
+      window.resizedFinishedFooter = setTimeout(function(){
+        jevelin_footer_parallax();
+      }, 500);
+  });
+  $(window).scroll(jevelin_footer_parallax_visible);
+
+  /* Share */
+  $('.social-share-button').on( 'click', function() {
+    $(this).next().toggleClass('sh-social-share-networks-active');
+  });
+
+  /* Share  */
+  $(".social-share-networks").jsSocials({
+    _getShareUrl: function() {
+        var url = jsSocials.Socials.prototype._getShareUrl.apply(this, arguments);
+        return "javascript:window.open('" + url + "', '', 'menubar=no, width=500, height=300')";
+    },
+    showLabel: false,
+    showCount: "inside",
+    shares: ["facebook", "twitter", "googleplus", "email", "pinterest"]
+  });
 
 })(jQuery); // End of use strict
