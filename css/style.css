@@ -24,6 +24,7 @@
 @import url(../lib/jssocials/jssocials.css);
 @import url(../lib/jquery-ui/jquery-ui.min.css);
 @import url(../lib/sumoselect/sumoselect.min.css);
+@import url(../lib/themify-icons/themify-icons.css);
 
 
 /* Layout Style
@@ -454,6 +455,7 @@ table th {
   display: block;
   color: #7e7e7e;
   font-size: 14px;
+  font-weight: bold;
   padding-top: 15px;
   padding-bottom: 15px;
   max-height: none;
@@ -1062,8 +1064,8 @@ table th {
 }
 .increase-numbers input,
 .increase-numbers span {
-  float: left;
-  display: block;
+  /*float: left;*/
+  display: inline-block;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -1714,4 +1716,78 @@ form.register {
   font-weight: bold;
   padding: 0 30px;
   transition: 0.25s all ease-in-out;
+}
+
+
+/* Cart */
+table.shop_table {
+  border: 1px solid rgba(0,0,0,.1);
+  margin: 0 -1px 24px 0;
+  text-align: left;
+  width: 100%;
+  border-collapse: separate;
+  border-radius: 5px;
+}
+table.cart td,
+table.cart th {
+  vertical-align: middle;
+}
+table.shop_table.cart td,
+table.shop_table.cart th {
+  text-align: center;
+  border: 1px solid #e5e5e5;
+}
+table.shop_table th {
+  font-weight: 700;
+  padding: 9px 12px;
+}
+table.shop_table.cart td {
+  padding: 30px;
+}
+table.shop_table.cart a {
+  font-weight: bold;
+}
+.remove {
+  font-size: 16px;
+  color: #8d8d8d;
+  top: 2px;
+}
+
+table.shop_table.cart img {
+  width: auto;
+  max-width: 85px;
+}
+td.product-name p.backorder_notification {
+  font-size: .83em;
+}
+td.actions .coupon {
+  float: left;
+}
+table.shop_table.cart td.actions .coupon .input-text {
+  padding: 0 15px;
+  width: 250px;
+  margin-right: 8px;
+  display: inline-block;
+}
+.shop_table .button {
+  color: #8d8d8d;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  overflow: visible;
+  font-weight: 700;
+  left: auto;
+  border: 0;
+  display: inline-block;
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none;
+  line-height: 50px;
+  padding: 0 30px;
+  transition: 0.25s all ease-in-out;
+  background-color: #f2f2f2;
+  border-radius: 100px;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-width: 0;
 }

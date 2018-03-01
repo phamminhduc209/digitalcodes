@@ -79,10 +79,10 @@
 							<div class="sh-table-cell">
 								<nav id="header-navigation" class="header-standard-position">
 									<div class="sh-nav-container">
-										<ul id="menu-header-menu" class="sh-nav" style="touch-action: pan-y;">
-											<li class="menu-item current_page_item"><a href="#" title="">Home</a></li>
-											<li class="menu-item current_page_item"><a href="#" title="">About</a></li>
-											<li class="menu-item menu-item-has-children">
+										<ul id="menu-header-menu" class="sh-nav">
+											<li class="menu-item"><a href="#" title="">Home</a></li>
+											<li class="menu-item"><a href="#" title="">About</a></li>
+											<li class="menu-item menu-item-has-children current_page_item">
 								                <a href="#" title="">Store</a>
 								                <ul class="sub-menu">
 								                    <li class="menu-item"><a href="#" title="">Store 1</a></li>
@@ -90,7 +90,7 @@
 								                    <li class="menu-item"><a href="#" title="">Store 1</a></li>
 								                </ul>
 								            </li>
-								            <li class="menu-item current_page_item"><a href="#" title="">Contact</a></li>
+								            <li class="menu-item"><a href="#" title="">Contact</a></li>
 								            <li class="menu-item sh-nav-cart sh-nav-special">
 											    <a href="#">
 											        <i class="icon-basket"></i>
@@ -165,7 +165,7 @@
 		<div id="wrapper">
 			<div class="content-container sh-page-layout-default">
 				<div class="container">
-					<!-- <div class="sh-alert sh-alert-success">
+					<div class="sh-alert sh-alert-success">
 						<div class="sh-alert-data sh-table">
 							<div class="sh-alert-data sh-table">
 								<div class="sh-table-cell sh-alert-data-icon">
@@ -174,13 +174,73 @@
 								<div class="sh-table-cell width-full">
 									<h3 class="sh-alert-title">
 										<div>
-											<a href="#" class="btn btn-log-res">Continue shopping</a> “12000 FIFA 17 Points Pack Origin” has been added to your cart.
+											<a href="#" class="btn btn-log-res" title="">Continue shopping</a> “12000 FIFA 17 Points Pack Origin” has been added to your cart.
 										</div>
 									</h3>
 								</div>
 							</div>
 						</div>
-					</div> -->
+					</div><!-- /.sh-alert-success -->
+					<form action="" method="get" class="block-cart-form">
+						<table class="shop_table shop_table_responsive cart">
+							<thead>
+								<tr>
+									<th class="product-remove">&nbsp;</th>
+									<th class="product-thumbnail">&nbsp;</th>
+									<th class="product-name">Product</th>
+									<th class="product-price">Price</th>
+									<th class="product-quantity">Quantity</th>
+									<th class="product-subtotal">Total</th>
+								</tr>
+							</thead>
+							<tbody>
+							    <tr class="cart-form__cart-item cart_item">
+							        <td class="product-remove">
+							            <a href="#" class="remove">
+							            	<span class="ti-close"></span>
+							            </a>
+							        </td>
+							        <td class="product-thumbnail">
+							            <a href="detail.html" title="">
+							            	<img width="660" height="660" src="images/cart/Windows-7-Ultimate.jpg" alt="" />
+							            </a>
+							        </td>
+							        <td class="product-name">
+							            <a href="detail.html" title="">Windows 7 Ultimate 32/64 Bit</a>
+							            <p class="backorder_notification">Available on backorder</p>
+							        </td>
+							        <td class="product-price">
+							            <span>1,999<span> vnđ</span></span>
+							        </td>
+							        <td class="product-quantity">
+							            <div class="cart">
+											<div class="quantity increase-numbers clearfix">
+												<span class="increase-number-down">
+													<i class="ti-arrow-down"></i>
+												</span>
+												<input type="text" class="quantity-number" step="1" min="1" max="" name="quantity" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="">
+												<span class="increase-number-up">
+													<i class="ti-arrow-up"></i>
+												</span>
+											</div>
+										</form>
+							        </td>
+							        <td class="product-subtotal" data-title="Total">
+							            <span>1,999<span> vnđ</span></span>
+							        </td>
+							    </tr>
+							    <tr>
+							        <td colspan="6" class="actions">
+							            <div class="coupon">
+							                <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="Coupon code" />
+							                <input type="submit" class="btn button" name="apply_coupon" value="Apply coupon">
+							            </div>
+							            <input type="submit" class="btn button" name="update_cart" value="Update cart" />
+							        </td>
+							    </tr>
+							</tbody>
+						</table>
+					</form>
 				</div>
 			</div>
 
