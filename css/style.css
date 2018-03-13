@@ -1791,3 +1791,74 @@ table.shop_table.cart td.actions .coupon .input-text {
   text-transform: uppercase;
   border-width: 0;
 }
+
+.sh-alert-notice, .sh-alert-notice .sh-alert-title, .sh-alert-notice .sh-alert-title a {
+    background-color: #f4f4f4;
+    color: #8d8d8d;
+}
+
+.sh-nothing-found {
+  background-color: #f4f4f4;
+  padding: 19px;
+  float: none;
+}
+.sh-nothing-found .sh-table-cell-top:first-child {
+    width: 45px;
+}
+.sh-nothing-found i {
+    color: #505050;
+    font-size: 26px;
+}
+.sh-nothing-found h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.sh-nothing-found p {
+    margin: 0;
+}
+.sh-nothing-found-big {
+    margin-top: 50px;
+    color: #e5e5e5;
+    font-weight: bold;
+    max-width: 500px;
+}
+.sh-nothing-found-big span {
+    font-size: 56px;
+    line-height: 56px;
+}
+.sh-nothing-found-big div {
+    font-size: 110px;
+    text-transform: uppercase;
+    line-height: 100px;
+}
+.return-to-shop {
+    margin-top: 50px;
+}
+.wc-backward {
+  background: #47c9e5;
+  color: #fff;
+  border-radius: 100px;
+  line-height: 50px;
+  padding: 0 30px;
+  transition: 0.25s all ease-in-out;
+  font-weight: bold;
+}
+.wc-backward:hover {
+  background: #15bee4;
+  color: #fff;
+  transition: 0.25s all ease-in-out;
+}
+
+.cart-collaterals .cart_totals {
+  width: 50%;
+  float: right;
+}
+.cart-collaterals .cart_totals table {
+  margin: 0 0 6px;
+  padding: 0;
+  width: 100%;
+}
+.wc-proceed-to-checkout {
+  padding: 1em 0;
+}

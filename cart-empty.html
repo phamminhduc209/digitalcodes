@@ -10,7 +10,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-	<title>Cart</title>
+	<title>Cart Empty</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="robots" content="index,follow" />
@@ -165,100 +165,35 @@
 		<div id="wrapper">
 			<div class="content-container sh-page-layout-default">
 				<div class="container">
-					<div class="sh-alert sh-alert-success">
+					<div class="sh-alert sh-alert-notice">
 						<div class="sh-alert-data sh-table">
-							<div class="sh-alert-data sh-table">
-								<div class="sh-table-cell sh-alert-data-icon">
-									<i class="icon-check sh-alert-icon"></i>
-								</div>
-								<div class="sh-table-cell width-full">
-									<h3 class="sh-alert-title">
-										<div>
-											<a href="#" class="btn btn-log-res" title="">Continue shopping</a> “12000 FIFA 17 Points Pack Origin” has been added to your cart.
-										</div>
-									</h3>
-								</div>
+							<div class="sh-table-cell sh-alert-data-icon">
+								<i class="icon-info sh-alert-icon"></i>
 							</div>
-						</div>
-					</div><!-- /.sh-alert-success -->
-					<form action="" method="get" class="block-cart-form">
-						<table class="shop_table shop_table_responsive cart">
-							<thead>
-								<tr>
-									<th class="product-remove">&nbsp;</th>
-									<th class="product-thumbnail">&nbsp;</th>
-									<th class="product-name">Product</th>
-									<th class="product-price">Price</th>
-									<th class="product-quantity">Quantity</th>
-									<th class="product-subtotal">Total</th>
-								</tr>
-							</thead>
-							<tbody>
-							    <tr class="cart-form__cart-item cart_item">
-							        <td class="product-remove">
-							            <a href="#" class="remove">
-							            	<span class="ti-close"></span>
-							            </a>
-							        </td>
-							        <td class="product-thumbnail">
-							            <a href="detail.html" title="">
-							            	<img width="660" height="660" src="images/cart/Windows-7-Ultimate.jpg" alt="" />
-							            </a>
-							        </td>
-							        <td class="product-name">
-							            <a href="detail.html" title="">Windows 7 Ultimate 32/64 Bit</a>
-							            <p class="backorder_notification">Available on backorder</p>
-							        </td>
-							        <td class="product-price">
-							            <span>1,999<span> vnđ</span></span>
-							        </td>
-							        <td class="product-quantity">
-							            <div class="cart">
-											<div class="quantity increase-numbers clearfix">
-												<span class="increase-number-down">
-													<i class="ti-arrow-down"></i>
-												</span>
-												<input type="text" class="quantity-number" step="1" min="1" max="" name="quantity" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="">
-												<span class="increase-number-up">
-													<i class="ti-arrow-up"></i>
-												</span>
-											</div>
-										</form>
-							        </td>
-							        <td class="product-subtotal" data-title="Total">
-							            <span>1,999<span> vnđ</span></span>
-							        </td>
-							    </tr>
-							    <tr>
-							        <td colspan="6" class="actions">
-							            <div class="coupon">
-							                <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="Coupon code" />
-							                <input type="submit" class="btn button" name="apply_coupon" value="Apply coupon">
-							            </div>
-							            <input type="submit" class="btn button" name="update_cart" value="Update cart" />
-							        </td>
-							    </tr>
-							</tbody>
-						</table>
-					</form>
-					<div class="cart-collaterals">
-						<div class="cart_totals">
-							<h2>Cart totals</h2>
-							<table cellspacing="0" class="shop_table shop_table_responsive">
-								<tr class="cart-subtotal">
-									<th>Subtotal</th>
-									<td data-title="Subtotal"><span>1,999<span> vnđ</span></span></td>
-								</tr>
-								<tr class="order-total">
-									<th>Total</th>
-									<td data-title="Total"><strong><span>1,999<span> vnđ</span></span></strong></td>
-								</tr>
-							</table>
-							<div class="wc-proceed-to-checkout">
-								<a class="btn wc-backward" href="#" title="">Proceed to checkout</a>
+							<div class="sh-table-cell width-full">
+									<h3 class="sh-alert-title">
+									<div>Checkout is not available whilst your cart is empty.</div>
+								</h3>
 							</div>
 						</div>
 					</div>
+					<div class="sh-nothing-found sh-table">
+						<div class="sh-table-cell-top">
+							<i class="icon-compass"></i>
+						</div>
+						<div class="sh-table-cell-top">
+							<h2>Cart is empty</h2>
+							<p>Looks like there is no items in your cart.</p>
+						</div>
+					</div>
+					<div class="sh-nothing-found-big">
+						<span>Your cart is</span>
+						<div>Currently empty</div>
+					</div>
+					<p class="cart-empty">Your cart is currently empty.</p>
+					<p class="return-to-shop">
+						<a class="btn wc-backward" href="#" title="">Return to shop</a>
+					</p>
 				</div>
 			</div>
 
