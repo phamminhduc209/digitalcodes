@@ -1862,3 +1862,56 @@ table.shop_table.cart td.actions .coupon .input-text {
 .wc-proceed-to-checkout {
   padding: 1em 0;
 }
+
+.MyAccount-navigation {
+  float: left;
+  width: 30%;
+}
+.MyAccount-navigation ul {
+  list-style: none;
+  padding-right: 15px;
+  padding-left: 0px;
+}
+.MyAccount-navigation ul li {
+  padding: 12px 1px;
+  border-bottom: 1px solid #e3e3e3;
+  font-size: 0px;
+  text-transform: uppercase;
+} 
+.MyAccount-navigation ul li a {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #8d8d8d;
+  display: block;
+}
+.MyAccount-navigation ul li.is-active a {
+  color: #000000;
+}
+.MyAccount-content {
+  float: right;
+  width: 68%;
+}
+
+.woocommerce-error, .woocommerce-info, .woocommerce-message {
+  padding: 1em 2em 1em 3.5em;
+  margin: 0 0 2em;
+  position: relative;
+  background-color: #f7f6f7;
+  color: #515151;
+  list-style: none outside;
+  width: auto;
+  word-wrap: break-word;
+}
+.woocommerce-info {
+  padding: 28px !important;
+}
+
+.woocommerce-message .button {
+  float: right;
+  background-color: #47c9e5;
+  color: #fff;
+  border-radius: 100px;
+  line-height: 50px;
+  padding: 0 30px;
+  transition: 0.25s all ease-in-out;
+}

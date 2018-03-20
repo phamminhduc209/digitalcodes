@@ -166,69 +166,33 @@
 			<div class="content-container sh-page-layout-default">
 				<div class="container">
 					<div class="row">
-						<div class="customer_login">
-							<div class="col-sm-6">
-								<h2>Login</h2>
-								<div class="form-login login">
-									<p class="form-group">
-										<label for="username">Username or email address <span class="required">*</span></label>
-										<input type="text" class="" name="username" id="username" value="">
-									</p>
-									<p class="form-group">
-										<label for="password">Password <span class="required">*</span></label>
-										<input type="password" class="" name="password" id="password" value="">
-									</p>
-									<div class="wc-social-login form-group">
-										<p class="ywsl-label">Login with:</p>
-										<p class="socials-list">
-									    	<a class="ywsl-social ywsl-facebook" href="#">
-									    		<img src="images/facebook.png" alt="Facebook"/>
-									    	</a>
-									    </p>
-									</div>
-									<p class="form-group">
-										<button type="submit" class="btn btn-log-res" name="login" value="Login">Login</button>
-										<label class="">
-											<input class="" name="rememberme" type="checkbox" id="rememberme" value="forever"> <span>Remember me</span>
-										</label>
-									</p>
-									<p class="">
-										<a href="#">Lost your password?</a>
-									</p>
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<h2>Register</h2>
-								<form action="#" method="post" class="register">
-									<p class="form-group">
-										<label for="first_name">First name</label>
-										<input type="text" class="input-text" name="first_name" id="first_name" value="">
-									</p>
-									<p class="form-group">
-										<label for="last_name">Last name</label>
-										<input type="text" class="input-text" name="last_name" id="last_name" value="">
-									</p>
-									<p class="form-group">
-										<label for="reg_username">Username <span class="required">*</span></label>
-										<input type="text" class="" name="username" id="reg_username" value="">
-									</p>
-									<p class="form-group">
-										<label for="reg_email">Email address <span class="required">*</span></label>
-										<input type="email" class="" name="email" id="reg_email" value="">
-									</p>
-									<p class="form-group">
-										<label for="reg_password">Password <span class="required">*</span></label>
-										<input type="password" class="" name="password" id="reg_password">
-									</p>
-									<p class="form-group">
-										<label for="payment_email">Payment email address <span class="required">*</span></label>
-										<input type="email" class="input-text" name="payment_email" id="payment_email" value="">
-									</p>
-									<p class="form-group">
-										<button type="submit" class="btn btn-log-res" name="register" value="Register">Register</button>
-									</p>
-								</form>
-							</div>
+						<nav class="MyAccount-navigation">
+						    <ul>
+						        <li class="MyAccount-navigation-link MyAccount-navigation-link--dashboard">
+						            <a href="https://www.digitalcodes.in/my-account/">Dashboard</a>
+						        </li>
+						        <li class="MyAccount-navigation-link MyAccount-navigation-link--orders is-active">
+						            <a href="https://www.digitalcodes.in/my-account/orders/">Orders</a>
+						        </li>
+						        <li class="MyAccount-navigation-link MyAccount-navigation-link--downloads">
+						            <a href="https://www.digitalcodes.in/my-account/downloads/">Downloads</a>
+						        </li>
+						        <li class="MyAccount-navigation-link MyAccount-navigation-link--edit-address">
+						            <a href="https://www.digitalcodes.in/my-account/edit-address/">Addresses</a>
+						        </li>
+						        <li class="MyAccount-navigation-link MyAccount-navigation-link--edit-account">
+						            <a href="https://www.digitalcodes.in/my-account/edit-account/">Account details</a>
+						        </li>
+						        <li class="MyAccount-navigation-link MyAccount-navigation-link--customer-logout">
+						            <a href="https://www.digitalcodes.in/my-account/customer-logout/">Logout</a>
+						        </li>
+						    </ul>
+						</nav>
+						<div class="MyAccount-content">
+							<div class="woocommerce-message woocommerce-info clearfix">
+								<a class="btn button" href="#">
+									Go shop		</a>
+								No order has been made yet.	</div>
 						</div>
 					</div>
 				</div>
