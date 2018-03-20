@@ -1915,3 +1915,14 @@ table.shop_table.cart td.actions .coupon .input-text {
   padding: 0 30px;
   transition: 0.25s all ease-in-out;
 }
+.woocommerce-Address-title h3 {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+.woocommerce-Address-title a {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+  margin-top: 6px;
+}
